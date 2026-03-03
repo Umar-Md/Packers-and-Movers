@@ -1,0 +1,172 @@
+import React from 'react';
+
+const About = () => {
+  const cardData = [
+    {
+      title: "Best Prices",
+      desc: "We provide services at the best and most affordable price starting from ₹3,500 without compromising on quality.",
+      subText: "Starts ₹3,500",
+      color: "#b0008e", 
+      glow: "#fdf2f8", 
+    },
+    {
+      title: "Free Quote",
+      desc: "Get a free, no-obligation quote from our moving experts. Reach us at 98481 11925.",
+      subText: "98481 11925",
+      color: "#c2410c", 
+      glow: "#fff7ed", 
+    },
+    {
+      title: "24/7 Support",
+      desc: "Our support team is available around the clock to ensure a smooth and timely delivery experience.",
+      subText: "Support Active",
+      color: "#0369a1", 
+      glow: "#f0f9ff", 
+    }
+  ];
+
+  return (
+    <div className="pt-24 font-montserrat bg-white text-gray-900">
+      {/* 1. Header Section */}
+      <section className="bg-[#b0008e] py-16 px-6 text-center text-white">
+        <h1 className="text-4xl font-bold mb-4">About Vedha Packers</h1>
+        <p className="max-w-2xl mx-auto text-pink-100 font-medium">
+          Safe, affordable, and professional relocation across India.
+        </p>
+      </section>
+
+      {/* 2. Who We Are & Mission */}
+      <section className="max-w-7xl mx-auto py-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="space-y-6">
+          <h2 className="text-4xl font-bold">Who We Are</h2>
+          <p className="text-gray-600 leading-relaxed text-lg">
+            Vedha Packers and Movers is a trusted name in the logistics industry. Based in Guntur we have grown from a local shifting service to a nationwide relocation partner. We pride ourselves on transparency, safety, and speed.
+          </p>
+          <div className="p-8 bg-gray-50 rounded-[30px] border-l-8 border-[#b0008e]">
+            <h3 className="font-bold text-xl mb-2 tracking-tight">Our Mission</h3>
+            <p className="text-gray-600">To provide stress-free, damage-free, and affordable moving solutions through innovation, safety protocols, and a customer-first approach.</p>
+          </div>
+        </div>
+        
+        {/* Fixed Class: h-112.5 replaces h-[450px] */}
+        <div className="relative h-112.5 overflow-hidden rounded-[40px] shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1000" 
+            alt="Professional Office" 
+            className="w-full h-full object-cover" 
+          />
+        </div>
+      </section>
+
+      {/* 3. Why Choose Us Section (Counters) */}
+      <section className="py-20 px-6 bg-gray-50 text-center">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold tracking-tight mb-16">Why Choose Us</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-5xl font-black text-[#b0008e] mb-2">10+</div>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Years Experience</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-black text-[#b0008e] mb-2">5000+</div>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Happy Customers</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-black text-[#b0008e] mb-2">24/7</div>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Support</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-black text-[#b0008e] mb-2">🛡️</div>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Insurance Coverage</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. InfoCards Section */}
+      <section className="bg-white py-24 px-6 overflow-hidden">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="flex flex-wrap justify-center gap-12 md:gap-16">
+            {cardData.map((card, i) => (
+              <div 
+                key={i} 
+                className="relative group shrink-0" 
+                style={{ '--card-color': card.color, '--glow-color': card.glow }}
+              >
+                {/* Fixed Class: bg-linear-to-b and to-(--card-color) */}
+                <span className="absolute -top-4 -left-4 w-16 h-16 rounded-full opacity-60 animate-[spin_6s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
+                <span className="absolute top-[60%] -left-8 w-20 h-20 rounded-full opacity-40 animate-[spin_5s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
+                <span className="absolute top-[10%] left-[60%] w-24 h-24 rounded-full opacity-50 animate-[spin_8s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
+
+                {/* Fixed Class: border-(--card-color)/30 and shadow variants */}
+                <div className="relative z-10 w-72 h-96 bg-white/70 backdrop-blur-md border border-(--card-color)/30 rounded-[10px] p-8 flex flex-col justify-between transition-all duration-500 group-hover:scale-105 group-hover:shadow-(--card-color)/20 group-hover:border-(--card-color) overflow-hidden">
+                  
+                  {/* Fixed Class: bg-(--card-color) */}
+                  <div className="absolute inset-0 bg-(--card-color) translate-x-full translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 ease-out -z-10 opacity-10"></div>
+                  
+                  <div className="absolute -top-3 -right-3 bg-white rounded-full p-1 shadow-md border border-gray-100">
+                    <svg className="w-8 h-8" fill={card.color} viewBox="0 0 512 512">
+                      <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
+                    </svg>
+                  </div>
+
+                  <div className="space-y-4 text-left">
+                    {/* Fixed Class: text-(--card-color) */}
+                    <strong className="block text-sm font-black text-(--card-color) tracking-widest transition-colors duration-300 group-hover:text-gray-900 uppercase">
+                      {card.title}
+                    </strong>
+                    <p className="text-[14px] leading-relaxed text-gray-600 font-medium group-hover:text-gray-800 transition-colors">
+                      {card.desc}
+                    </p>
+                    {/* Fixed Class: border-(--card-color)/20 */}
+                    <hr className="border-t-[1.5px] border-(--card-color)/20 group-hover:border-(--card-color)/40" />
+                    <p className="text-2xl font-black text-gray-800 tracking-tight">{card.subText}</p>
+                  </div>
+
+                  {/* Fixed Class: border-(--card-color) and text-(--card-color) and hover:bg-(--card-color) */}
+                  <button className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-full border-2 border-(--card-color) text-(--card-color) font-bold text-xs transition-all duration-300 hover:bg-(--card-color) hover:text-white bg-white">
+                    Enquire Now
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. All India Network */}
+      <section className="bg-[#111] py-24 px-6 text-white text-center">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <h2 className="text-4xl font-bold">All India Network</h2>
+          <div className="w-20 h-1 bg-[#b0008e] mx-auto"></div>
+          <p className="text-gray-400 text-lg">
+            From our primary hub in Guntur, we provide seamless 
+            intercity and interstate shifting services to any destination across India.
+          </p>
+        </div>
+      </section>
+
+      {/* 6. Professional Team & Support Section */}
+      <section className="py-24 px-6 bg-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="p-12 bg-gray-50 rounded-[25px] border border-gray-100">
+            <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-3xl mb-8 text-white">👨‍💼</div>
+            <h3 className="text-2xl font-bold mb-4">Professional Team</h3>
+            <p className="text-gray-600 leading-relaxed font-medium">
+              Our staff are trained relocation experts. From handling fragile glassware to dismantling heavy furniture, our team follows strict safety protocols.
+            </p>
+          </div>
+          <div className="p-12 bg-gray-50 rounded-[25px] border border-gray-100">
+            <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-3xl mb-8 text-white">📞</div>
+            <h3 className="text-2xl font-bold mb-4">24/7 Support</h3>
+            <p className="text-gray-600 leading-relaxed font-medium">
+              Our dedicated support line is active 24/7 to provide updates and resolve any queries you have during transit.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default About;

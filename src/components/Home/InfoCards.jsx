@@ -3,85 +3,86 @@ import React from 'react';
 const InfoCards = () => {
   const cardData = [
     {
-      title: "BEST PRICES",
-      desc: "We provide services at the best and most affordable price in Narasaraopet without compromising on quality.",
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      bgColor: "bg-[#b0008e]", // Matches the pink/magenta in your screenshot
-      textColor: "text-white",
-      isMiddle: false
+      title: "Best Prices",
+      desc: "We provide services at the best and most affordable price starting from ₹3,500 without compromising on quality.",
+      subText: "Starts ₹3,500",
+      color: "#b0008e", // Vedha Magenta
+      glow: "#fdf2f8", 
     },
     {
-      title: "Get A Free Quote",
-      desc: "Call us today to get a free, no-obligation quote from our moving experts.",
-      subText: "90147 04373",
-      buttonText: "Contact Us",
-      bgColor: "bg-white",
-      textColor: "text-[#b0008e]",
-      isMiddle: true // This flag triggers the extra height
+      title: "Free Quote",
+      desc: "Get a free, no-obligation quote from our moving experts. Reach us at 98481 11925.",
+      subText: "98481 11925",
+      color: "#c2410c", // Muted Deep Orange
+      glow: "#fff7ed", 
     },
     {
-      title: "24/7 SUPPORT",
-      desc: "You should be able to enjoy everything in life. We guarantee that nothing will stop you with our quick strategy.",
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-        </svg>
-      ),
-      bgColor: "bg-[#b0008e]",
-      textColor: "text-white",
-      isMiddle: false
+      title: "24/7 Support",
+      desc: "Our support team is available around the clock to ensure a smooth and timely delivery experience.",
+      subText: "Support Active",
+      color: "#0369a1", // Muted Deep Blue
+      glow: "#f0f9ff", 
     }
   ];
 
   return (
-    <section className="relative z-40 mx-auto px-4 mt-10">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 overflow-hidden shadow-2xl">
-        {cardData.map((card, index) => (
-          <div 
-            key={index} 
-            className={`
-              ${card.bgColor} ${card.textColor} 
-              flex-1 w-full transition-all duration-500 ease-in-out cursor-default
-              flex flex-col items-center justify-center text-center p-12
-              hover:scale-105 hover:z-50 group rounded-2xl
-              ${card.isMiddle ? 'min-h-112.5 py-16 shadow-xl z-10 scale-105 md:scale-110' : 'min-h-100'}
-            `}
-          >
-            {/* Icon (For Side Cards) */}
-            {card.icon && (
-              <div className="mb-6 transform group-hover:rotate-12 transition-transform duration-300">
-                {card.icon}
-              </div>
-            )}
-            
-            {/* Title */}
-            <h3 className="text-2xl font-bold mb-4 tracking-wider uppercase">
-              {card.title}
-            </h3>
-            
-            {/* Separator Line */}
-            <div className={`w-12 h-0.5 mb-6 transition-all duration-300 group-hover:w-20 ${card.bgColor === 'bg-white' ? 'bg-[#b0008e]' : 'bg-white/40'}`}></div>
-            
-            {/* Description */}
-            <p className={`text-sm leading-relaxed max-w-62.5 ${card.isMiddle ? 'text-gray-600 font-medium' : 'opacity-90'}`}>
-              {card.desc}
-            </p>
+    <section className="bg-white py-24 px-6 overflow-hidden font-montserrat">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-center font-bold text-4xl md:text-5xl text-gray-900 mb-20 tracking-tighter italic">
+          Why Choose <span className="text-[#b0008e] not-italic">Vedha</span>?
+        </h2>
 
-            {/* Middle Card Specific Content */}
-            {card.isMiddle && (
-              <div className="mt-6 flex flex-col items-center">
-                <span className="text-lg font-black mb-6">{card.subText}</span>
-                <button className="px-10 py-3 border-2 border-[#b0008e] text-[#b0008e] font-bold rounded-lg hover:bg-[#b0008e] hover:text-white transition-all transform active:scale-95">
-                  {card.buttonText}
+        <div className="flex flex-wrap justify-center gap-12 md:gap-16">
+          {cardData.map((card, i) => (
+            <div 
+              key={i} 
+              className="relative group shrink-0" 
+              style={{ '--card-color': card.color, '--glow-color': card.glow }}
+            >
+              
+              {/* Floating Orbs */}
+              <span className="absolute -top-4 -left-4 w-16 h-16 rounded-full opacity-60 animate-[spin_6s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl" style={{ animationDelay: '0.1s' }}></span>
+              <span className="absolute top-[60%] -left-8 w-20 h-20 rounded-full opacity-40 animate-[spin_5s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl" style={{ animationDelay: '0.2s' }}></span>
+              <span className="absolute top-[10%] left-[60%] w-24 h-24 rounded-full opacity-50 animate-[spin_8s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl" style={{ animationDelay: '0.3s' }}></span>
+
+              {/* Card Body */}
+              <div className="relative z-10 w-72 h-96 bg-white/70 backdrop-blur-md border border-(--card-color)/30 rounded-[10px] p-8 flex flex-col justify-between transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-(--card-color)/20 group-hover:border-(--card-color) overflow-hidden">
+                
+                {/* THE HOVER FILL EFFECT 
+                  Moves from bottom-left (-100% X, 100% Y) to center (0,0)
+                */}
+                <div className="absolute inset-0 bg-(--card-color) translate-x-full translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 ease-out -z-10 opacity-10"></div>
+                <div className="absolute inset-0 bg-(--card-color) translate-x-[-105%] translate-y-[105%] group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500 ease-in-out -z-10 opacity-5"></div>
+
+                {/* Floating Check Icon */}
+                <div className="absolute -top-3 -right-3 bg-white rounded-full p-1 shadow-md group-hover:scale-110 transition-transform duration-500 border border-gray-100">
+                  <svg className="w-8 h-8" fill={card.color} viewBox="0 0 512 512">
+                    <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
+                  </svg>
+                </div>
+
+                <div className="space-y-4">
+                  <strong className="block text-sm font-black text-(--card-color) tracking-widest transition-colors duration-300 group-hover:text-gray-900">
+                    {card.title}
+                  </strong>
+                  <p className="text-[14px] leading-relaxed text-gray-600 font-medium group-hover:text-gray-800 transition-colors">
+                    {card.desc}
+                  </p>
+                  <hr className="border-t-[1.5px] border-(--card-color)/20 group-hover:border-(--card-color)/40" />
+                  <p className="text-2xl font-black text-gray-800 tracking-tight">{card.subText}</p>
+                </div>
+
+                {/* Button */}
+                <button className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-full border-2 border-(--card-color) text-(--card-color) font-bold text-xs transition-all duration-300 hover:bg-(--card-color) hover:text-white group/btn bg-white">
+                  Enquire Now
+                  <svg className="w-0 h-4 fill-current scale-0 transition-all duration-300 group-hover/btn:w-4 group-hover/btn:scale-100" viewBox="0 0 512 512">
+                    <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"></path>
+                  </svg>
                 </button>
               </div>
-            )}
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

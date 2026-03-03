@@ -2,6 +2,7 @@ const links = [
   { name: 'Home', href: '#home' },
   { name: 'About Us', href: '#about' },
   { name: 'Services', href: '#services' },
+  { name: 'Pricing', href: '#pricing' },
   { name: 'Contact Us', href: '#contact' },
 ];
 

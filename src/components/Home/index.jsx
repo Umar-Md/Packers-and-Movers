@@ -3,24 +3,30 @@ import Carousel from './Carousel';
 import InfoCards from './InfoCards';
 import Process from './Process';
 import Services from './Services';
-
+import QuoteForm from './QuoteForm';
+import Pricing from './Pricing';
+import Hero from './Hero';
+import About from './About';
+import Testimonials from './Testimonials';
 const HomeContent = () => {
   return (
     <div className="relative">
       {/* Full Page Hero Section */}
       <section id="home">
+        <Hero />
         <Carousel />
+        {/* <QuoteForm  /> */}
+        <Pricing />
+        <About />
       </section>
 
       {/* Brand Introduction Section */}
       <section className="py-24 bg-white">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <span className="text-orange-600 font-bold text-m">Welcome to P&M</span>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-3 mb-8">
-            P&M Packers and Movers <br /> 
-            <span className="text-blue-800">Narasaraopet</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8">
+            Vedha Packers and Movers <br /> 
           </h2>
-          <div className="w-24 h-1.5 bg-blue-800 mx-auto mb-10 rounded-full"></div>
+          <div className="w-64 h-1.5 bg-blue-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
             Relocating your home or office? We provide end-to-end solutions including 
             premium packing, safe loading, and timely transportation. Our experienced 
@@ -30,6 +36,7 @@ const HomeContent = () => {
         <InfoCards />
         <Process />
         <Services />
+        <Testimonials />
       </section>
     </div>
   );

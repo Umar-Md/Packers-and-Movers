@@ -1,9 +1,12 @@
+import React from 'react';
+
 const NavLogo = ({ isScrolled }) => (
-  <div className="shrink-0 flex items-center cursor-pointer">
-    <span className={`text-2xl font-black tracking-tighter transition-colors duration-300 ${
-      isScrolled ? 'text-blue-800' : 'text-blue'
+  <div className="shrink-0 flex items-center cursor-pointer select-none">
+    <span className={`text-2xl font-bold tracking-tight transition-colors duration-300 ${
+      isScrolled ? 'text-gray-900' : 'text-gray-800'
     }`}>
-      PACKERS&<span className={isScrolled ? 'text-orange-600' : 'text-orange-400'}>MOVERS</span>
+      Vedha <span className="text-[#b0008e]">Packers &</span> 
+      <span className={isScrolled ? 'text-gray-900' : 'text-gray-800'}> Movers</span>
     </span>
   </div>
 );
