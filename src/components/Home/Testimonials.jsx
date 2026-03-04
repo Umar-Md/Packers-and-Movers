@@ -48,7 +48,7 @@ const Testimonial = () => {
         
         <div className="mx-auto max-w-7xl">
           <div className="mb-8 text-left">
-             <h2 className="text-[#b0008e] font-black uppercase tracking-[.3em] text-xs">Customer Stories</h2>
+             <h2 className="text-[#b0008e] font-black  text-xs">Customer Stories</h2>
           </div>
 
           {/* Slider Container */}
@@ -139,7 +139,7 @@ const Testimonial = () => {
             <span className="text-[#b0008e] italic">Let’s Make It Easy!</span>
           </h2>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-[#b0008e] text-white px-8 py-4 rounded-full font-black text-m hover:bg-white hover:text-[#b0008e] transition-all duration-300 shadow-xl flex items-center ">
+            <button className="bg-[#FF6B00] text-white px-8 py-4 rounded-full font-black text-m hover:bg-white hover:text-[#b0008e] transition-all duration-300 shadow-xl flex items-center ">
               👉 Get Instant Quote
             </button>
             <button className="bg-transparent border-2 border-white/20 text-white px-8 py-4 rounded-full font-bold text-m hover:bg-white/10 transition-all">

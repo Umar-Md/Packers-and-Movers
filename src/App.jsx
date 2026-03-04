@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import React from 'react';
 import Footer from './components/Footer/Footer';
+import FloatingActions from './components/FloatingActions';
   
 function App() {
   return (
@@ -9,9 +10,11 @@ function App() {
       <Navbar />
       <main>
         <Home />
-      
+
       </main>
+      <FloatingActions />
       <Footer />  
+
     </div>
   );
 }

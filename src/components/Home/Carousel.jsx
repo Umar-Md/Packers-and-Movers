@@ -67,17 +67,17 @@ const Carousel = () => {
             </div>
 
             {/* 💰 Highlight Box */}
-            <div className="inline-flex items-center gap-3 bg-white border-l-4 border-[#b0008e] px-6 py-4 shadow-lg rounded-r-2xl">
+            <div className="inline-flex items-center gap-3 bg-white border-l-4 border-[#fd9115] px-6 py-4 shadow-lg rounded-r-2xl">
               <span className="text-3xl">💰</span>
               <div>
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">Pricing Starts At</p>
+                <p className="text-m font-bold text-gray-400">Pricing Starts At</p>
                 <p className="text-2xl font-black text-gray-900">₹3,500 Only*</p>
               </div>
             </div>
 
             {/* 🔥 CTA Buttons */}
             <div className="flex flex-wrap gap-4">
-              <button className="bg-[#b0008e] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-black transition-all shadow-xl hover:scale-105">
+              <button className="bg-[#b0008e] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-blue-700 transition-all shadow-xl hover:scale-105">
                 Get Free Quote
               </button>
               

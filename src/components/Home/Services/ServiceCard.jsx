@@ -23,7 +23,7 @@ const ServiceCard = ({ title, image, desc }) => (
       <p className="text-gray-500 text-sm leading-relaxed mb-6">
         {desc}
       </p>
-      <button className="w-full py-3 border-2 border-[#b0008e] text-[#b0008e] rounded-xl font-bold text-sm uppercase tracking-wider hover:bg-[#b0008e] hover:text-white transition-all">
+      <button className="w-full py-3 border-2 border-[#b0008e] text-[#b0008e] rounded-xl font-bold text-sm hover:bg-[#b0008e] hover:text-white transition-all">
         View Details
       </button>
     </div>

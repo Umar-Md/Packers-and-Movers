@@ -8,7 +8,7 @@ const links = [
 
 const NavLinks = ({ mobile, isScrolled, closeMenu }) => {
   // Logic: If not scrolled, text is white. If scrolled, text is gray.
-  const textColor = isScrolled ? 'text-gray-700 hover:text-blue-700' : 'text-black hover:text-orange-400';
+  const textColor = isScrolled ? 'text-gray-700 hover:text-blue-700' : 'text-white hover:text-orange-400';
   
   const baseStyles = `font-semibold transition-colors duration-300 ${textColor}`;
   const mobileStyles = "block py-4 px-6 text-gray-800 hover:bg-gray-50 border-b";

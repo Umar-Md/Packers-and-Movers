@@ -65,19 +65,19 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-5xl font-black text-[#b0008e] mb-2">10+</div>
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Years Experience</p>
+              <p className="text-xs font-bold text-gray-500">Years Experience</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-black text-[#b0008e] mb-2">5000+</div>
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Happy Customers</p>
+              <p className="text-xs font-bold text-gray-500">Happy Customers</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-black text-[#b0008e] mb-2">24/7</div>
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Support</p>
+              <p className="text-xs font-bold text-gray-500">Support</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-black text-[#b0008e] mb-2">🛡️</div>
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Insurance Coverage</p>
+              <p className="text-xs font-bold text-gray-500">Insurance Coverage</p>
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ const About = () => {
       </section>
 
       {/* 5. All India Network */}
-      <section className="bg-[#111] py-24 px-6 text-white text-center">
+      <section className="bg-[#111] py-16 px-6 text-white text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-4xl font-bold">All India Network</h2>
           <div className="w-20 h-1 bg-[#b0008e] mx-auto"></div>
