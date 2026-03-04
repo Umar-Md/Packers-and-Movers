@@ -1,13 +1,16 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 const links = [
-  { name: 'Home', href: '#home' },
-  { name: 'About Us', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Pricing', href: '#pricing' },
-  { name: 'Contact Us', href: '#contact' },
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Pricing', href: '/pricing' },
+  { name: 'Contact Us', href: '/contact' },
 ];
 
 const NavLinks = ({ mobile, isScrolled, closeMenu }) => {
-  // Logic: If not scrolled, text is white. If scrolled, text is gray.
+  // Restore your exact original color logic
   const textColor = isScrolled ? 'text-gray-700 hover:text-blue-700' : 'text-white hover:text-orange-400';
   
   const baseStyles = `font-semibold transition-colors duration-300 ${textColor}`;
@@ -16,14 +19,19 @@ const NavLinks = ({ mobile, isScrolled, closeMenu }) => {
   return (
     <div className={mobile ? "flex flex-col bg-white" : "hidden md:flex space-x-10"}>
       {links.map((link) => (
-        <a 
+        <NavLink 
           key={link.name} 
-          href={link.href} 
-          className={mobile ? mobileStyles : baseStyles}
+          to={link.href} 
+          // Applying your original baseStyles directly
+          className={({ isActive }) => 
+            mobile 
+              ? mobileStyles 
+              : `${baseStyles} ${isActive ? 'opacity-100' : 'opacity-90'}`
+          }
           onClick={closeMenu}
         >
           {link.name}
-        </a>
+        </NavLink>
       ))}
     </div>
   );

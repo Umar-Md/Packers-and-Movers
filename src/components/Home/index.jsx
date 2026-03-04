@@ -33,7 +33,7 @@ const HomeContent = () => {
             team ensures a stress-free experience for every move within or outside Narasaraopet.
           </p>
         </div>
-        <InfoCards />
+        {/* <InfoCards /> */}
         <Process />
         <Services />
         <Testimonials />
