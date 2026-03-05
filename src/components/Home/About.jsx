@@ -112,7 +112,7 @@ const About = () => {
 
                   <div className="space-y-4 text-left">
                     {/* Fixed Class: text-(--card-color) */}
-                    <strong className="block text-sm font-black text-(--card-color) tracking-widest transition-colors duration-300 group-hover:text-gray-900 uppercase">
+                    <strong className="block text-sm font-black text-(--card-color) tracking-widest transition-colors duration-300 group-hover:text-gray-900">
                       {card.title}
                     </strong>
                     <p className="text-[14px] leading-relaxed text-gray-600 font-medium group-hover:text-gray-800 transition-colors">

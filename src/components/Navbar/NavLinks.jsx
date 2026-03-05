@@ -17,7 +17,7 @@ const NavLinks = ({ mobile, isScrolled, closeMenu }) => {
   const mobileStyles = "block py-4 px-6 text-gray-800 hover:bg-gray-50 border-b";
 
   return (
-    <div className={mobile ? "flex flex-col bg-white" : "hidden md:flex space-x-10"}>
+    <div className={mobile ? "flex flex-col bg-white" : "hidden md:flex space-x-10 text-[20px]"}>
       {links.map((link) => (
         <NavLink 
           key={link.name} 

@@ -29,7 +29,7 @@ const About = () => {
       {/* CTA Section */}
       <div className="bg-[#b0008e] py-16 px-6 text-center">
         <h2 className="text-3xl font-black text-white mb-2">Ready to experience a better move?</h2>
-        <button className="bg-white text-[#b0008e] px-12 py-4 rounded-full font-black uppercase tracking-widest hover:bg-gray-900 hover:text-white transition-all shadow-xl">
+        <button className="bg-white text-[#b0008e] px-12 py-4 rounded-full font-black hover:bg-gray-900 hover:text-white transition-all shadow-xl">
           Get a Quote Now
         </button>
       </div>

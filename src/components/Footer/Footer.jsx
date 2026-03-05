@@ -11,7 +11,6 @@ const Footer = () => {
           
           {/* Logo & Brand Section */}
           <div className="lg:col-span-4 space-y-8">
-            <img src="/src/assets/card.jpeg" alt="Vedha Packers and Movers Logo" className="h-40 w-80" />
             <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
               Making every move a pleasant memory. We specialize in safe, secure, 
               and affordable logistics across India.
