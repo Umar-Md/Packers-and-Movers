@@ -44,11 +44,11 @@ const Testimonial = () => {
       {/* 5. ⭐ Premium Testimonials Section */}
       <section className="relative isolate overflow-hidden bg-gray-900 px-6 py-20 sm:py-24 lg:px-8">
         <div className="absolute inset-0 -z-10 bg-linear-to-r from-[#b0008e]/20 to-transparent opacity-20" />
-        <div className="absolute inset-y-0 left-0 -z-10 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-[#b0008e]/10 ring-white/5" />
+        <div className="absolute inset-y-0 left-0 -z-10 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-700 shadow-xl ring-1 shadow-[#b0008e]/10 ring-white/50" />
         
         <div className="mx-auto max-w-7xl">
           <div className="mb-8 text-left">
-             <h2 className="text-[#b0008e] font-black  text-xs">Customer Stories</h2>
+             <h2 className="text-[#9eb000] font-black  text-xl">Customer Stories</h2>
           </div>
 
           {/* Slider Container */}
@@ -79,7 +79,7 @@ const Testimonial = () => {
                       <div className="text-gray-400 font-medium flex items-center gap-2">
                         <span>{t.location}</span>
                         <svg width={3} height={3} className="fill-gray-500"><circle r={1} cx={1} cy={1} /></svg>
-                        <span className="text-[#b0008e] font-bold">Verified Client</span>
+                        <span className="text-[#00b00f] font-bold">Verified Client</span>
                       </div>
                     </div>
                   </figcaption>
@@ -128,7 +128,7 @@ const Testimonial = () => {
           <img 
             src="https://images.unsplash.com/photo-1600518464441-9154a4dea21b?q=80&w=2000" 
             alt="Moving Truck" 
-            className="w-full h-full object-cover brightness-[0.2]"
+            className="w-full h-full object-cover brightness-[0.6]"
           />
           <div className="absolute inset-0 bg-linear-to-r from-black via-black/40 to-transparent"></div>
         </div>

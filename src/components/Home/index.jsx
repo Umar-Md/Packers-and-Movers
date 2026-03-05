@@ -21,7 +21,7 @@ const HomeContent = () => {
       </section>
 
       {/* Brand Introduction Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white pb-0">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8">
             Vedha Packers and Movers <br /> 

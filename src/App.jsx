@@ -8,11 +8,12 @@ import FloatingActions from './components/FloatingActions';
 import Services from './components/Services/Services';
 import Pricing from './components/Pricing/Pricing';
 import Contact from './components/Contact/Contact';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <Router>
       {/* ScrollToTop ensures the page starts at the top when navigating to /about */}
-      
+      <ScrollToTop />
       <div className="min-h-screen bg-gray-50">
         <Navbar />
         

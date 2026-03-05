@@ -13,8 +13,8 @@ const Process = () => {
     <section className="py-24 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-gray-900 mt-2">How It Works</h2>
-          <span className="text-pink-600 font-bold text-m">Simplifying your move</span>
+          <h2 className="text-5xl font-black text-gray-900 mt-2">How It Works</h2>
+          <span className="text-pink-600 font-bold text-xl">Simplifying your move</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">

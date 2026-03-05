@@ -40,7 +40,7 @@ const Pricing = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
             Affordable <span className="text-[#b0008e]">Pricing Plans</span>
           </h2>
-          <p className="text-gray-500 font-medium">Transparent moving costs with zero hidden charges.</p>
+          <p className="text-gray-500 font-medium text-[18  px]">Transparent moving costs with zero hidden charges.</p>
         </div>
 
         {/* Pricing Cards */}
@@ -54,7 +54,7 @@ const Pricing = () => {
             >
               {/* Plan Badge */}
               <div className={`inline-block px-4 py-2 rounded-full ${plan.lightAccent} mb-8`}>
-                <span className="text-xs font-black  text-gray-700">
+                <span className="text-m font-black  text-gray-700">
                   {plan.badge}
                 </span>
               </div>

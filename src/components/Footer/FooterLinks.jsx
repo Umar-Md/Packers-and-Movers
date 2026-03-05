@@ -14,7 +14,7 @@ const FooterLinks = () => {
     <div className="grid grid-cols-2 gap-8 sm:gap-12">
       {sections.map((section) => (
         <div key={section.title}>
-          <h3 className="text-white font-bold mb-6 text-xs">
+          <h3 className="text-white font-bold mb-6 text-[16px]">
             {section.title}
           </h3>
           <ul className="space-y-4">

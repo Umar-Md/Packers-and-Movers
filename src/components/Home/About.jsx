@@ -44,7 +44,7 @@ const About = () => {
           </p>
           <div className="p-8 bg-gray-50 rounded-[30px] border-l-8 border-[#b0008e]">
             <h3 className="font-bold text-xl mb-2 tracking-tight">Our Mission</h3>
-            <p className="text-gray-600">To provide stress-free, damage-free, and affordable moving solutions through innovation, safety protocols, and a customer-first approach.</p>
+            <p className="text-gray-800 text-[18px]">To provide stress-free, damage-free, and affordable moving solutions through innovation, safety protocols, and a customer-first approach.</p>
           </div>
         </div>
         
@@ -135,11 +135,11 @@ const About = () => {
       </section>
 
       {/* 5. All India Network */}
-      <section className="bg-[#111] py-16 px-6 text-white text-center">
+      <section className="bg-[#000000] py-16 px-6 text-white text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-4xl font-bold">All India Network</h2>
-          <div className="w-20 h-1 bg-[#b0008e] mx-auto"></div>
-          <p className="text-gray-400 text-lg">
+          <div className="w-30 h-1 bg-[#b0008e] mx-auto rounded-full"></div>
+          <p className="text-gray-400 text-[20px] leading-relaxed font-medium">
             From our primary hub in Guntur, we provide seamless 
             intercity and interstate shifting services to any destination across India.
           </p>
@@ -148,23 +148,38 @@ const About = () => {
 
       {/* 6. Professional Team & Support Section */}
       <section className="py-24 px-6 bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="p-12 bg-gray-50 rounded-[25px] border border-gray-100">
-            <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-3xl mb-8 text-white">👨‍💼</div>
-            <h3 className="text-2xl font-bold mb-4">Professional Team</h3>
-            <p className="text-gray-600 leading-relaxed font-medium">
-              Our staff are trained relocation experts. From handling fragile glassware to dismantling heavy furniture, our team follows strict safety protocols.
-            </p>
-          </div>
-          <div className="p-12 bg-gray-50 rounded-[25px] border border-gray-100">
-            <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-3xl mb-8 text-white">📞</div>
-            <h3 className="text-2xl font-bold mb-4">24/7 Support</h3>
-            <p className="text-gray-600 leading-relaxed font-medium">
-              Our dedicated support line is active 24/7 to provide updates and resolve any queries you have during transit.
-            </p>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <div className="p-12 bg-gray-100 rounded-[25px] border border-gray-100 flex items-start gap-6">
+      <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-white shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a7.5 7.5 0 0115 0" />
+        </svg>
+      </div>
+      <div>
+        <h3 className="text-3xl font-bold mb-2">Professional Team</h3>
+        <p className="text-gray-600 leading-relaxed font-medium text-[18px]">
+          Our staff are trained relocation experts. From handling fragile glassware to dismantling heavy furniture, our team follows strict safety protocols.
+        </p>
+      </div>
+    </div>
+
+    <div className="p-12 bg-gray-100 rounded-[25px] border border-gray-100 flex items-start gap-6">
+      <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-white shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75l9.75 5.25 9.75-5.25M3 8.25v7.5a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 15.75v-7.5" />
+        </svg>
+      </div>
+      <div>
+        <h3 className="text-3xl font-bold mb-2">24/7 Support</h3>
+        <p className="text-gray-600 leading-relaxed font-medium text-[18px]">
+          Our dedicated support line is active 24/7 to provide updates and resolve any queries you have during transit.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
     </div>
   );
 };

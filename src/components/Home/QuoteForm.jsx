@@ -14,11 +14,11 @@ const QuoteForm = () => {
 
         {/* Header Section - Uppercase and Tighter removed */}
         <div className="relative z-10 mb-8">
-          <span className="inline-block px-3 py-1 rounded-full bg-[#b0008e]/10 text-[#b0008e] text-[10px] font-black mb-3">
+          <span className="inline-block px-3 py-1 rounded-full bg-[#b0008e]/10 text-[#11cc39] text-[12px] font-black mb-3">
             Priority Moving
           </span>
           <h3 className="text-3xl font-bold text-gray-900 leading-tight">
-            Get a <span className="text-[#b0008e]">Free Quote</span>
+            Get a <span className="text-[#ff9822]">Free Quote</span>
           </h3>
         </div>
         
@@ -78,7 +78,7 @@ const QuoteForm = () => {
               className="group/btn relative w-full py-5 bg-green-500 rounded-2xl overflow-hidden transition-all duration-300 active:scale-95"
             >
               <div className="absolute inset-0 bg-[#21dab1] translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div>
-              <span className="relative z-10 text-white font-bold tracking-wide flex items-center justify-center gap-2">
+              <span className="relative z-10 text-white text-[16px] font-bold tracking-wide flex items-center justify-center gap-2">
                 Get Instant Quote
                 <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
               </span>

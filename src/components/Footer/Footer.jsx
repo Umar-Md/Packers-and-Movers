@@ -5,7 +5,7 @@ import FooterContact from './FooterContact';
 
 const Footer = () => {
   return (
-    <footer className="bg-black pt-20 pb-10 px-6 font-montserrat border-t border-white/5">
+    <footer className="bg-black pt-20 pb-10  px-6 font-montserrat border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-16">
           
@@ -32,13 +32,10 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-gray-600 text-[10px]  font-bold">
+          <p className="text-gray-600 text-[12px]  font-bold">
             © 2026 Vedha Packers and Movers. All rights reserved.
           </p>
-          <div className="flex gap-8 text-[10px] font-black text-gray-500">
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-          </div>
+          
         </div>
       </div>
     </footer>
