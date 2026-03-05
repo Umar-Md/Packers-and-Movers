@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Pricing = () => {
+  const navigate = useNavigate();
   const plans = [
     {
       badge: "🥉 Basic Local Shifting",
@@ -78,7 +80,9 @@ const Pricing = () => {
               </ul>
 
               {/* CTA Button */}
-              <button className={`w-full py-4 rounded-2xl font-black  text-white bg-linear-to-r ${plan.accent} shadow-lg hover:shadow-xl transition-all active:scale-95`}>
+              <button
+              onClick={() => navigate('/quote')}
+              className={`w-full py-4 rounded-2xl font-black  text-white bg-linear-to-r ${plan.accent} shadow-lg hover:shadow-xl transition-all active:scale-95`}>
                 {plan.btnText}
               </button>
             </div>

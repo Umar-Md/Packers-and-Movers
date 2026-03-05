@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 const Testimonial = () => {
+  const navigate = useNavigate();
   const testimonials = [
     {
       name: "Rahul Sharma",
@@ -139,10 +141,14 @@ const Testimonial = () => {
             <span className="text-[#b0008e] italic">Let’s Make It Easy!</span>
           </h2>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-[#FF6B00] text-white px-8 py-4 rounded-full font-black text-m hover:bg-white hover:text-[#b0008e] transition-all duration-300 shadow-xl flex items-center ">
+            <button
+            onClick={() => navigate('/quote')}
+            className="bg-[#FF6B00] text-white px-8 py-4 rounded-full font-black text-m hover:bg-white hover:text-[#b0008e] transition-all duration-300 shadow-xl flex items-center ">
               👉 Get Instant Quote
             </button>
-            <button className="bg-transparent border-2 border-white/20 text-white px-8 py-4 rounded-full font-bold text-m hover:bg-white/10 transition-all">
+            <button 
+            onClick={() => navigate('/services')}
+            className="bg-transparent border-2 border-white/20 text-white px-8 py-4 rounded-full font-bold text-m hover:bg-white/10 transition-all">
               View Services
             </button>
           </div>

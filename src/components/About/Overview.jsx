@@ -2,11 +2,11 @@ const Overview = () => (
   <section className="py-20 px-6 bg-white">
     <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <h2 className="text-[#b0008e] font-black  text-sm mb-4">Who We Are</h2>
-        <h3 className="text-4xl md:text-4xl font-black text-gray-900 mb-6 leading-tight" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
+        <h2 className="text-[#b0008e] font-black  text-5xl mb-4">Who We Are</h2>
+        <h3 className="text-4xl md:text-3xl font-black text-gray-900 mb-6 leading-tight" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
           Your Trusted Partners in <br /> Seamless Relocation
         </h3>
-        <p className="text-gray-600 text-lg leading-relaxed font-montserrat">
+        <p className="text-gray-600 text-[20px] leading-relaxed font-montserrat">
           Vedha Packers and Movers started with a single goal: to redefine the moving experience in Guntur. 
           With years of expertise, we have grown into a premier logistics provider, handling everything 
           from delicate household items to large-scale office transitions with surgical precision.

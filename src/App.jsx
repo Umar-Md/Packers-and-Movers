@@ -9,6 +9,7 @@ import Services from './components/Services/Services';
 import Pricing from './components/Pricing/Pricing';
 import Contact from './components/Contact/Contact';
 import ScrollToTop from './components/ScrollToTop';
+import QuoteForm from './components/Home/QuoteForm';
 function App() {
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/quote" element={<QuoteForm />} />
           </Routes>
         </main>
 

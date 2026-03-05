@@ -5,7 +5,7 @@ import FooterContact from './FooterContact';
 
 const Footer = () => {
   return (
-    <footer className="bg-black pt-20 pb-10  px-6 font-montserrat border-t border-white/5">
+    <footer className="bg-black pt-20 pb-10 bottom-0 px-6 font-montserrat border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 mb-16">
           

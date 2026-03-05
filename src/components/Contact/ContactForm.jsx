@@ -5,11 +5,13 @@ const ContactForm = () => {
     <form className="bg-white p-8 md:p-10 rounded-[40px] shadow-2xl border border-gray-50 space-y-5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <input 
+        required
           type="text" 
           placeholder="Your Name" 
           className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all" 
         />
         <input 
+          required
           type="tel" 
           placeholder="Phone Number" 
           className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all" 
@@ -17,18 +19,21 @@ const ContactForm = () => {
       </div>
       
       <input 
-        type="email" 
+        type="email"
+         required
         placeholder="Email Address" 
         className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all" 
       />
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <input 
+          required
           type="text" 
           placeholder="Move From (City)" 
           className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all" 
         />
         <input 
+          required
           type="text" 
           placeholder="Move To (City)" 
           className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all" 
@@ -36,6 +41,7 @@ const ContactForm = () => {
       </div>
 
       <textarea 
+        required
         placeholder="Your Message" 
         rows="4" 
         className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all"

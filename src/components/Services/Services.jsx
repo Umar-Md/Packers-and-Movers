@@ -7,10 +7,10 @@ const Services = () => {
     <main className="overflow-x-hidden">
       {/* Page Header (Matches About Us style) */}
       <div className="bg-[#4d72c7] pt-20 pb-10 px-6 text-center">
-        <h1 className="text-5xl md:text-7xl font-black text-white" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
+        <h1 className="text-4xl md:text-7xl font-black text-white" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
           Our <span className="text-[#ffffff]">Services</span>
         </h1>
-        <p className="text-gray-900 mt-4 font-montserrat text-lg">
+        <p className="text-gray-900 mt-4 font-montserrat font-bold text-[20px]">
           Premium Logistics Solutions
         </p>
       </div>

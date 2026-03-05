@@ -15,11 +15,11 @@ const Pricing = () => {
   return (
     <main className="min-h-screen bg-white">
       {/* 1. Added the Dark Header to match Services/About */}
-      <div className="bg-[#0f172a] pt-40 pb-24 px-6 text-center">
-        <h1 className="text-6xl md:text-8xl font-black text-white leading-none italic">
+      <div className="bg-[#4e7ef0] pt-20 pb-10 px-6 text-center">
+        <h1 className="text-6xl md:text-6xl font-black text-white leading-none italic">
           Pricing <span className="text-[#b0008e]">Plans</span>
         </h1>
-        <p className="text-gray-400 mt-6 font-semibold text-xs">
+        <p className="text-yellow-300 mt-6 font-semibold text-[20px]">
           Transparent • Affordable • Reliable
         </p>
       </div>

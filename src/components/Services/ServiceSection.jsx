@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ServiceSection = ({ service }) => {
+  const navigate = useNavigate();
   return (
     <section
       className={`py-20 px-6 ${service.reverse ? "bg-gray-50" : "bg-white"}`}
@@ -28,7 +30,7 @@ const ServiceSection = ({ service }) => {
           >
             {service.title}
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed font-medium">
+          <p className="text-gray-600 text-[20px] leading-relaxed font-medium">
             {service.desc}
           </p>
 
@@ -52,7 +54,10 @@ const ServiceSection = ({ service }) => {
 
           {/* MAGIC BUTTON */}
           <div className="pt-6">
-            <button className="group relative px-10 py-4 bg-[#212121] text-white font-black text-lg rounded-[15px] transition-transform active:scale-95 overflow-hidden shadow-xl">
+            <button
+              onClick={() => navigate("/quote")}
+              className="group relative px-10 py-4 bg-[#212121] text-white font-black text-lg rounded-[15px] transition-transform active:scale-95 overflow-hidden shadow-xl"
+            >
               {/* The Circling Border Layer */}
               <span
                 className="absolute inset-0 p-0.5 rounded-[15px] 

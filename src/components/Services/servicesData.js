@@ -1,3 +1,5 @@
+import vpm from "../../assets/vpm.webp";
+
 export const servicesList = [
   {
     id: 1,
@@ -20,7 +22,7 @@ export const servicesList = [
     title: "Vehicle Transport",
     desc: "Secure transportation for cars and bikes using specialized carriers with door-to-door service.",
     points: ["Car Carrier", "Bike Transport", "Door Pickup & Delivery"],
-    img: "https://images.unsplash.com/photo-1594731802111-070045214877?q=80&w=800",
+    img: vpm,
     reverse: false
   },
   {

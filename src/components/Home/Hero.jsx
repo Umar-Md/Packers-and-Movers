@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useNavigate } from "react-router-dom"; // 1. Change Navigate to useNavigate
 
 // Import Swiper styles
 import "swiper/css";
@@ -8,7 +9,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const Hero = () => {
-  // Logic to ensure the font loads even if not in tailwind.config
+  const navigate = useNavigate(); // 2. Initialize the hook here
+
   const centuryFont = {
     fontFamily: '"Century Gothic", CenturyGothic, AppleGothic, sans-serif'
   };
@@ -28,7 +30,6 @@ const Hero = () => {
 
   return (
     <div className="h-screen w-full">
-      {/* Small style tag to import Montserrat since we aren't using config */}
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');`}
       </style>
@@ -81,6 +82,7 @@ const Hero = () => {
                   </a>
 
                   <button 
+                    onClick={() => navigate('/services')} // 3. This will now work!
                     className="bg-white/10 backdrop-blur-md border border-white/30 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300"
                     style={centuryFont}
                   >
