@@ -20,7 +20,7 @@ const FooterLinks = () => {
           <ul className="space-y-4">
             {section.links.map((link) => (
               <li key={link}>
-                <a href="#" className="text-gray-400 hover:text-[#b0008e] transition-colors text-sm font-medium">
+                <a href="#" className="text-white hover:text-[#b0008e] transition-colors text-sm font-medium">
                   {link}
                 </a>
               </li>

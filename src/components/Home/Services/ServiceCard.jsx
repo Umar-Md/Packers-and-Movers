@@ -17,11 +17,11 @@ const ServiceCard = ({ title, image, desc }) => (
 
     {/* Content */}
     <div className="p-6 text-center flex flex-col grow">
-      <h3 className="text-[22px] font-bold text-gray-900 mb-3 group-hover:text-[#b0008e] transition-colors">
+      <h3 className="text-[22px] font-bold text-black mb-3 group-hover:text-[#b0008e] transition-colors">
         {title}
       </h3>
 
-      <p className="text-gray-500 text-m leading-relaxed mb-6 grow">
+      <p className="text-black text-m leading-relaxed mb-6 grow">
         {desc}
       </p>
 

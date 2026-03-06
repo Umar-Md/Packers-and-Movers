@@ -10,7 +10,7 @@ const ProcessStep = ({ number, title, desc, icon }) => (
     {/* Content */}
     <div className="mt-6 text-center">
       <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
-      <p className="text-m text-gray-500 max-w-50 leading-relaxed">
+      <p className="text-m text-black max-w-50 leading-relaxed">
         {desc}
       </p>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import circle from "../../assets/circle.webp";
 const About = () => {
   const cardData = [
     {
@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-24 font-montserrat bg-white text-gray-900">
+    <div className="pt-24 font-montserrat bg-white text-black">
       {/* 1. Header Section */}
       <section className="bg-[#b0008e] py-16 px-6 text-center text-white">
         <h1 className="text-4xl font-bold mb-4">About Vedha Packers</h1>
@@ -39,12 +39,12 @@ const About = () => {
       <section className="max-w-7xl mx-auto py-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold">Who We Are</h2>
-          <p className="text-gray-600 leading-relaxed text-lg">
+          <p className="text-black leading-relaxed text-lg">
             Vedha Packers and Movers is a trusted name in the logistics industry. Based in Guntur we have grown from a local shifting service to a nationwide relocation partner. We pride ourselves on transparency, safety, and speed.
           </p>
           <div className="p-8 bg-gray-50 rounded-[30px] border-l-8 border-[#b0008e]">
             <h3 className="font-bold text-xl mb-2 tracking-tight">Our Mission</h3>
-            <p className="text-gray-800 text-[18px]">To provide stress-free, damage-free, and affordable moving solutions through innovation, safety protocols, and a customer-first approach.</p>
+            <p className="text-black text-[18px]">To provide stress-free, damage-free, and affordable moving solutions through innovation, safety protocols, and a customer-first approach.</p>
           </div>
         </div>
         
@@ -65,19 +65,19 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-5xl font-black text-[#b0008e] mb-2">10+</div>
-              <p className="text-xs font-bold text-gray-500">Years Experience</p>
+              <p className="text-xs font-bold text-black">Years Experience</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-black text-[#b0008e] mb-2">5000+</div>
-              <p className="text-xs font-bold text-gray-500">Happy Customers</p>
+              <p className="text-xs font-bold text-black">Happy Customers</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-black text-[#b0008e] mb-2">24/7</div>
-              <p className="text-xs font-bold text-gray-500">Support</p>
+              <p className="text-xs font-bold text-black">Support</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-black text-[#b0008e] mb-2">🛡️</div>
-              <p className="text-xs font-bold text-gray-500">Insurance Coverage</p>
+              <p className="text-xs font-bold text-black">Insurance Coverage</p>
             </div>
           </div>
         </div>
@@ -147,35 +147,60 @@ const About = () => {
       </section>
 
       {/* 6. Professional Team & Support Section */}
-      <section className="py-24 px-6 bg-white">
+      {/* 6. Professional Team & Support Section */}
+<section className="py-24 px-6 bg-white">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-    <div className="p-12 bg-gray-100 rounded-[25px] border border-gray-100 flex items-start gap-6">
-      <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-white shrink-0">
+    {/* Professional Team */}
+    <div className="relative p-12 bg-gray-100 rounded-[25px] border border-gray-100 flex items-start gap-6 overflow-hidden">
+
+      {/* Background Circle */}
+      <img
+        src={circle}
+        alt="bg"
+        className="absolute -top-10 left-120 -bottom-16 w-46 opacity-60 pointer-events-none"
+      />
+
+      <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-white shrink-0 z-10">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">
           <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a7.5 7.5 0 0115 0" />
         </svg>
       </div>
-      <div>
+
+      <div className="z-10">
         <h3 className="text-3xl font-bold mb-2">Professional Team</h3>
         <p className="text-gray-600 leading-relaxed font-medium text-[18px]">
-          Our staff are trained relocation experts. From handling fragile glassware to dismantling heavy furniture, our team follows strict safety protocols.
+          Our staff are trained relocation experts. From handling fragile glassware
+          to dismantling heavy furniture, our team follows strict safety protocols.
         </p>
       </div>
+
     </div>
 
-    <div className="p-12 bg-gray-100 rounded-[25px] border border-gray-100 flex items-start gap-6">
-      <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-white shrink-0">
+    {/* 24/7 Support */}
+    <div className="relative p-12 bg-gray-100 rounded-[25px] border border-gray-100 flex items-start gap-6 overflow-hidden">
+
+      {/* Background Circle */}
+      <img
+        src={circle}
+        alt="bg"
+        className="absolute -right-10 -bottom-10 w-46 opacity-50 pointer-events-none"
+      />
+
+      <div className="w-14 h-14 bg-[#b0008e] rounded-2xl flex items-center justify-center text-white shrink-0 z-10">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">
           <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75l9.75 5.25 9.75-5.25M3 8.25v7.5a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 15.75v-7.5" />
         </svg>
       </div>
-      <div>
+
+      <div className="z-10">
         <h3 className="text-3xl font-bold mb-2">24/7 Support</h3>
         <p className="text-gray-600 leading-relaxed font-medium text-[18px]">
-          Our dedicated support line is active 24/7 to provide updates and resolve any queries you have during transit.
+          Our dedicated support line is active 24/7 to provide updates and resolve
+          any queries you have during transit.
         </p>
       </div>
+
     </div>
 
   </div>

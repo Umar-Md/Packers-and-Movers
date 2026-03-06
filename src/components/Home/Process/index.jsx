@@ -1,5 +1,6 @@
 import React from 'react';
 import ProcessStep from './ProcessStep';
+import circleBg from "../../../assets/circle-2.webp";
 
 const Process = () => {
   const steps = [
@@ -10,21 +11,38 @@ const Process = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-gray-50 overflow-hidden relative">
+
+      {/* Blurred Background */}
+      <div
+        className="absolute inset-0 bg-center bg-cover bg-no-repeat blur-1 opacity-40"
+        style={{ backgroundImage: `url(${circleBg})` }}
+      ></div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        
+        {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-black text-gray-900 mt-2">How It Works</h2>
-          <span className="text-pink-600 font-bold text-xl">Simplifying your move</span>
+          <h2 className="text-5xl font-black text-gray-900 mt-2">
+            How It Works
+          </h2>
+          <span className="text-pink-600 font-bold text-xl">
+            Simplifying your move
+          </span>
         </div>
 
+        {/* Steps */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
-          {/* Connecting Line for Desktop */}
+
+          {/* Connecting Line */}
           <div className="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-pink-100 z-0"></div>
-          
+
           {steps.map((step, i) => (
             <ProcessStep key={i} {...step} />
           ))}
+
         </div>
+
       </div>
     </section>
   );

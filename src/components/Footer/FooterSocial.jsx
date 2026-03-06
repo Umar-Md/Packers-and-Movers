@@ -1,8 +1,23 @@
+import React from 'react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
+
 const FooterSocial = () => {
   const socialIcons = [
-    { name: 'Facebook', icon: 'FB' },
-    { name: 'Instagram', icon: 'IG' },
-    { name: 'LinkedIn', icon: 'IN' },
+    { 
+      name: 'Facebook', 
+      icon: <Facebook size={18} />, 
+      href: 'https://facebook.com/yourpage' 
+    },
+    { 
+      name: 'Instagram', 
+      icon: <Instagram size={18} />, 
+      href: 'https://instagram.com/yourhandle' 
+    },
+    { 
+      name: 'LinkedIn', 
+      icon: <Linkedin size={18} />, 
+      href: 'https://linkedin.com/company/yourcompany' 
+    },
   ];
 
   return (
@@ -10,12 +25,18 @@ const FooterSocial = () => {
       {socialIcons.map((social) => (
         <a
           key={social.name}
-          href="#"
-          className="size-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-[#b0008e] hover:text-white hover:border-[#b0008e] transition-all duration-300"
+          href={social.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={social.name}
+          className="group size-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:bg-[#b0008e] hover:text-white hover:border-[#b0008e] transition-all duration-300"
         >
-          <span className="text-xs font-bold">{social.icon}</span>
+          <span className="transition-transform duration-300 group-hover:scale-110">
+            {social.icon}
+          </span>
         </a>
-      ))}
+      )
+      )}
     </div>
   );
 };

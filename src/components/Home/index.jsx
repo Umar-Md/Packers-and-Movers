@@ -23,11 +23,11 @@ const HomeContent = () => {
       {/* Brand Introduction Section */}
       <section className="py-24 bg-white pb-0">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-8">
             Vedha Packers and Movers <br /> 
           </h2>
           <div className="w-64 h-1.5 bg-blue-500 mx-auto mb-6 rounded-full"></div>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-black leading-relaxed max-w-3xl mx-auto">
             Relocating your home or office? We provide end-to-end solutions including 
             premium packing, safe loading, and timely transportation. Our experienced 
             team ensures a stress-free experience for every move within or outside Narasaraopet.

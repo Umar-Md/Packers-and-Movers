@@ -48,7 +48,7 @@ const Strengths = () => {
             </div>
 
             {/* Description */}
-            <p className="text-gray-500 text-[18px] font-montserrat">{item.desc}</p>
+            <p className="text-gray-900 text-[18px] font-montserrat">{item.desc}</p>
           </div>
         ))}
       </div>

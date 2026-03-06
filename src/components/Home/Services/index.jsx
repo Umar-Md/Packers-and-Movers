@@ -29,7 +29,7 @@ const Services = () => {
     <section className="py-24 bg-white" id="services">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-gray-900 mt-2">Professional Moving Services</h2>
+          <h2 className="text-4xl font-black text-black mt-2">Professional Moving Services</h2>
           <span className="text-[#b0008e] font-bold  text-xl">What We Offer</span>
           <div className="w-20 h-1.5 bg-[#b0008e] mx-auto mt-4 rounded-full shadow-[0_0_10px_#b0008e]"></div>
         </div>

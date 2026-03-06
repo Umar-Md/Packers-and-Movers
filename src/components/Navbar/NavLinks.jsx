@@ -11,10 +11,10 @@ const links = [
 
 const NavLinks = ({ mobile, isScrolled, closeMenu }) => {
   // Restore your exact original color logic
-  const textColor = isScrolled ? 'text-gray-700 hover:text-blue-700' : 'text-white hover:text-orange-400';
+  const textColor = isScrolled ? 'text-black hover:text-blue-700' : 'text-white hover:text-orange-400';
   
   const baseStyles = `font-semibold transition-colors duration-300 ${textColor}`;
-  const mobileStyles = "block py-4 px-6 text-gray-800 hover:bg-gray-50 border-b";
+  const mobileStyles = "block py-4 px-6 text-black hover:bg-gray-50 border-b";
 
   return (
     <div className={mobile ? "flex flex-col bg-white" : "hidden md:flex space-x-10 text-[20px]"}>

@@ -39,7 +39,7 @@ const Pricing = () => {
                 <PricingCard key={plan.id} plan={plan} />
               ))
             ) : (
-              <div className="col-span-3 text-center py-20 text-gray-400 font-bold">
+              <div className="col-span-3 text-center py-20 text-black font-bold">
                 No plans found for this category
               </div>
             )}

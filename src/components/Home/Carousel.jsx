@@ -56,12 +56,12 @@ const Carousel = () => {
           {/* LEFT SIDE: Copy & CTAs */}
           <div className="space-y-8 animate-in fade-in slide-in-from-left duration-1000">
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-[1.1]">
+              <h1 className="text-4xl md:text-6xl font-bold text-black leading-[1.1]">
                 Safe & Affordable <br />
                 <span className="text-[#b0008e]">Packers and Movers</span> <br />
                 in India
               </h1>
-              <p className="mt-6 text-lg md:text-xl text-gray-600 font-medium">
+              <p className="mt-6 text-lg md:text-xl text-black font-medium">
                 {slides[0].subText}
               </p>
             </div>
@@ -70,8 +70,8 @@ const Carousel = () => {
             <div className="inline-flex items-center gap-3 bg-white border-l-4 border-[#fd9115] px-6 py-4 shadow-lg rounded-r-2xl">
               <span className="text-3xl">💰</span>
               <div>
-                <p className="text-m font-bold text-gray-400">Pricing Starts At</p>
-                <p className="text-2xl font-black text-gray-900">₹3,500 Only*</p>
+                <p className="text-m font-bold text-black">Pricing Starts At</p>
+                <p className="text-2xl font-black text-black">₹3,500 Only*</p>
               </div>
             </div>
 

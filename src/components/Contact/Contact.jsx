@@ -6,7 +6,7 @@ import ContactInfo from './ContactInfo';
 const Contact = () => {
   return (
     <main className="bg-white min-h-screen">
-      <div className="bg-[#dcebd5] pt-20 pb-4 px-6 text-center">
+      <div className="bg-[#f7e96c] pt-20 pb-4 px-6 text-center">
         <h1 className="text-6xl md:text-6xl font-black text-white leading-none italic">
           Contact <span className="text-[#923b81]">Us</span>
         </h1>

@@ -1,8 +1,10 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Quote from "../../assets/quote.png";
 
 const Pricing = () => {
   const navigate = useNavigate();
+
   const plans = [
     {
       badge: "🥉 Basic Local Shifting",
@@ -10,8 +12,12 @@ const Pricing = () => {
       scope: "1RK / 1BHK",
       features: ["Loading & Unloading", "Basic Packing", "Local Distance"],
       btnText: "Get Quote",
-      accent: "from-orange-400 to-orange-600",
-      lightAccent: "bg-orange-50",
+      // NEW CARD BG: Soft Orange/Amber
+      cardBg: "bg-[#FFF7ED]",
+      btnColor: "bg-[#ff6a00]",
+      badgeBg: "bg-orange-200",
+      textColor: "text-orange-900",
+      quoteColor: "#ff6a00",
     },
     {
       badge: "🥈 Standard Intercity",
@@ -19,70 +25,116 @@ const Pricing = () => {
       scope: "2BHK / 3BHK",
       features: ["Packing + Transport", "Insurance Option", "Shared Vehicle"],
       btnText: "Get Quote",
-      accent: "from-slate-400 to-slate-600",
-      lightAccent: "bg-slate-50",
-      isFeatured: true, // Making this one stand out slightly
+      // NEW CARD BG: Soft Slate/Blue
+      cardBg: "bg-[#F1F5F9]",
+      btnColor: "bg-[#54627b]",
+      badgeBg: "bg-slate-200",
+      textColor: "text-slate-900",
+      isFeatured: true,
+      quoteColor: "#54627b",
     },
     {
       badge: "🥇 Premium All India",
       price: "Custom",
       scope: "Full House Packing",
-      features: ["Dedicated Vehicle", "Door-to-Door Delivery", "All India Service"],
+      features: [
+        "Dedicated Vehicle",
+        "Door-to-Door Delivery",
+        "All India Service",
+      ],
       btnText: "Book Now",
-      accent: "from-[#b0008e] to-[#ff4dc7]",
-      lightAccent: "bg-pink-50",
-    }
+      // NEW CARD BG: Soft Pink/Lavender
+      cardBg: "bg-[#FDF2F8]",
+      btnColor: "bg-[#b0008e]",
+      badgeBg: "bg-pink-200",
+      textColor: "text-pink-900",
+      quoteColor: "#b0008e",
+    },
   ];
 
   return (
-    <section className="bg-gray-50 py-24 px-6 font-montserrat">
+    <section className="bg-white py-24 px-6 font-montserrat overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-black text-gray-900 tracking-tighter mb-4">
             Affordable <span className="text-[#b0008e]">Pricing Plans</span>
           </h2>
-          <p className="text-gray-500 font-medium text-[18  px]">Transparent moving costs with zero hidden charges.</p>
+          <p className="text-gray-900 font-bold text-xl">
+            Transparent moving costs with zero hidden charges.
+          </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {plans.map((plan, i) => (
-            <div 
-              key={i} 
-              className={`relative bg-white rounded-[40px] p-8 transition-all duration-500 hover:-translate-y-4 ${
-                plan.isFeatured ? 'shadow-2xl border-2 border-[#b0008e]/20 scale-105 z-10' : 'shadow-xl border border-gray-100'
+            <div
+              key={i}
+              className={`relative p-12 transition-all duration-700 hover:-translate-y-6 group flex flex-col justify-between ${plan.cardBg} ${
+                plan.isFeatured
+                  ? "shadow-[0_40px_80px_-15px_rgba(0,0,0,0.1)] scale-105 z-10 border-2 border-white"
+                  : "shadow-xl"
               }`}
+              style={{ borderRadius: "60px" }}
             >
-              {/* Plan Badge */}
-              <div className={`inline-block px-4 py-2 rounded-full ${plan.lightAccent} mb-8`}>
-                <span className="text-m font-black  text-gray-700">
-                  {plan.badge}
-                </span>
+              {/* --- 180 Degree Rotated Quotation Mark --- */}
+              <div className="absolute top-8 right-8 pointer-events-none">
+                <img className="h-14 w-14" src={Quote} alt="Quote" />
               </div>
 
-              {/* Price & Scope */}
-              <div className="mb-8">
-                <h3 className="text-4xl font-black text-gray-900 mb-1">{plan.price}</h3>
-                <p className="text-sm font-bold text-[#b0008e]">{plan.scope}</p>
+              <div>
+                {/* Plan Badge */}
+                <div
+                  className={`inline-block px-6 py-2 rounded-full ${plan.badgeBg} mb-10 shadow-sm`}
+                >
+                  <span className={`text-xs font-black  ${plan.textColor}`}>
+                    {plan.badge}
+                  </span>
+                </div>
+
+                {/* Price Display */}
+                <div className="mb-10">
+                  <h3 className="text-4xl font-black text-gray-900 tracking-tighter">
+                    {plan.price}
+                  </h3>
+                  <p className="text-lg font-bold text-[#b0008e] mt-2 italic">
+                    {plan.scope}
+                  </p>
+                </div>
+
+                {/* Features List */}
+                <ul className="space-y-5 mb-12">
+                  {plan.features.map((feature, idx) => (
+                    <li
+                      key={idx}
+                      className="flex items-center gap-4 text-black font-bold"
+                    >
+                      <div className="shrink-0 w-7 h-7 rounded-full bg-green-500 flex items-center justify-center shadow-lg">
+                        <svg
+                          className="w-4 h-4 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                      </div>
+                      <span className="text-[16px]">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-
-              {/* Features List */}
-              <ul className="space-y-4 mb-10">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-gray-600 font-medium text-sm">
-                    <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-
-              {/* CTA Button */}
+              <div className="w-full h-1px bg-gray-300/50 mb-8"></div>
+              {/* Action Button */}
               <button
-              onClick={() => navigate('/quote')}
-              className={`w-full py-4 rounded-2xl font-black  text-white bg-linear-to-r ${plan.accent} shadow-lg hover:shadow-xl transition-all active:scale-95`}>
+                onClick={() => navigate("/quote")}
+                className={`w-full py-4 rounded-full font-bold text-lg text-white ${plan.btnColor} shadow-lg hover:scale-105 hover:brightness-110 transition-all active:scale-95`}
+              >
                 {plan.btnText}
               </button>
             </div>
@@ -90,10 +142,10 @@ const Pricing = () => {
         </div>
 
         {/* Footnote */}
-        <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100">
-            <span className="text-xl">💡</span>
-            <p className="text-sm text-gray-500 font-semibold italic">
+        <div className="mt-20 flex justify-center">
+          <div className=" bg-yellow-100 flex items-center gap-2 border-b-2 border-red-400 px-6 py-3 rounded-full shadow-md">
+            <span>💡</span>
+            <p className="text-sm font-semibold text-black">
               *Final price depends on distance & volume of goods.
             </p>
           </div>

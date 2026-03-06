@@ -6,7 +6,7 @@ const Overview = () => (
         <h3 className="text-4xl md:text-3xl font-black text-gray-900 mb-6 leading-tight" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
           Your Trusted Partners in <br /> Seamless Relocation
         </h3>
-        <p className="text-gray-600 text-[20px] leading-relaxed font-montserrat">
+        <p className="text-black text-[20px] leading-relaxed font-montserrat">
           Vedha Packers and Movers started with a single goal: to redefine the moving experience in Guntur. 
           With years of expertise, we have grown into a premier logistics provider, handling everything 
           from delicate household items to large-scale office transitions with surgical precision.

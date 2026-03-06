@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 ${isScrolled ? "text-gray-800" : "text-white"}`}
+              className={`p-2 ${isScrolled ? "text-black" : "text-white"}`}
             >
               <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (

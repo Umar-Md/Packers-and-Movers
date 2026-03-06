@@ -66,13 +66,13 @@ const InfoCards = () => {
                     {card.title}
                   </strong>
 
-                  <p className="text-[14px] leading-relaxed text-gray-600 font-medium group-hover:text-white transition-colors duration-300">
+                  <p className="text-[14px] leading-relaxed text-black font-medium group-hover:text-white transition-colors duration-300">
                     {card.desc}
                   </p>
 
                   <hr className="border-t-[1.5px] border-gray-100 group-hover:border-white/20 transition-colors" />
 
-                  <p className="text-2xl font-black text-gray-800 group-hover:text-white tracking-tight transition-colors">
+                  <p className="text-2xl font-black text-gray-900 group-hover:text-white tracking-tight transition-colors">
                     {card.subText}
                   </p>
                 </div>

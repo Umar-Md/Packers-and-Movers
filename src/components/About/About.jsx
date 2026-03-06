@@ -15,7 +15,7 @@ const About = () => {
         <h1 className="text-6xl md:text-7xl font-black text-white tracking-tighter" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
           About <span className="text-[#ff3cd8]">Us</span>
         </h1>
-        <p className="text-gray-400 mt-0 font-montserrat text-lg">
+        <p className="text-black mt-0 font-montserrat text-lg">
           Reliability • Security • Speed
         </p>
       </div>
