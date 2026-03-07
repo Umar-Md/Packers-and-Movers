@@ -142,11 +142,10 @@ const Pricing = () => {
         </div>
 
         {/* Footnote */}
-        <div className="mt-20 flex justify-center">
+        <div className="mt-14 flex justify-center">
           <div className=" bg-yellow-100 flex items-center gap-2 border-b-2 border-red-400 px-6 py-3 rounded-full shadow-md">
-            <span>💡</span>
-            <p className="text-sm font-semibold text-black">
-              *Final price depends on distance & volume of goods.
+            <p className="text-4xl font-semibold text-black">
+              Final price depends on distance & volume of goods.
             </p>
           </div>
         </div>

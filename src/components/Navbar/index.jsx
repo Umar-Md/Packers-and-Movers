@@ -26,7 +26,6 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
 
           <NavLogo isScrolled={isScrolled} />
-
           <NavLinks isScrolled={isScrolled} />
 
           <NavActions />

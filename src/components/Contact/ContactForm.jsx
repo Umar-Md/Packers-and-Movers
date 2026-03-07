@@ -318,7 +318,7 @@ const ContactForm = () => {
               onChange={handleChange}
               type="text"
               placeholder="City Name"
-              className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
+              className="w-full p-4 bg-gray-50  rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
             />
           </div>
           <div className="space-y-1">
@@ -373,7 +373,7 @@ const ContactForm = () => {
           <button
             disabled={status.loading}
             type="submit"
-            className={`group relative w-full py-5 bg-[#212121] text-white font-black text-lg  rounded-[20px] transition-transform active:scale-95 overflow-hidden shadow-2xl ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
+            className={`group relative w-full py-5 bg-[#4d72c7] text-white font-black text-lg  rounded-[20px] transition-transform active:scale-95 overflow-hidden shadow-2xl ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
           >
             {/* The Rotating Magic Border */}
             <span
@@ -398,7 +398,7 @@ const ContactForm = () => {
                 <>
                   Confirm Inquiry{" "}
                   <span className="group-hover:translate-x-2 transition-transform">
-                    🚀
+                    
                   </span>
                 </>
               )}

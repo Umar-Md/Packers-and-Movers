@@ -1,6 +1,8 @@
 import React from 'react';
 import circle from "../../assets/circle.webp";
+import { useNavigate } from 'react-router-dom';
 const About = () => {
+  const navigate = useNavigate();
   const cardData = [
     {
       title: "Best Prices",
@@ -26,7 +28,7 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-24 font-montserrat bg-white text-black">
+    <div className="pt-0 font-montserrat bg-white text-black">
       {/* 1. Header Section */}
       <section className="bg-[#b0008e] py-16 px-6 text-center text-white">
         <h1 className="text-4xl font-bold mb-4">About Vedha Packers</h1>
@@ -82,58 +84,65 @@ const About = () => {
           </div>
         </div>
       </section>
-
       {/* 4. InfoCards Section */}
-      <section className="bg-white py-24 px-6 overflow-hidden">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex flex-wrap justify-center gap-12 md:gap-16">
-            {cardData.map((card, i) => (
-              <div 
-                key={i} 
-                className="relative group shrink-0" 
-                style={{ '--card-color': card.color, '--glow-color': card.glow }}
-              >
-                {/* Fixed Class: bg-linear-to-b and to-(--card-color) */}
-                <span className="absolute -top-4 -left-4 w-16 h-16 rounded-full opacity-60 animate-[spin_6s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
-                <span className="absolute top-[60%] -left-8 w-20 h-20 rounded-full opacity-40 animate-[spin_5s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
-                <span className="absolute top-[10%] left-[60%] w-24 h-24 rounded-full opacity-50 animate-[spin_8s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
+<section className="bg-white py-24 px-6 overflow-hidden">
+  <div className="max-w-7xl mx-auto text-center">
+    <div className="flex flex-wrap justify-center gap-12 md:gap-16 mb-16">
+      {cardData.map((card, i) => (
+        <div 
+          key={i} 
+          className="relative group shrink-0" 
+          style={{ '--card-color': card.color, '--glow-color': card.glow }}
+        >
+          {/* Animated Glow Backgrounds */}
+          <span className="absolute -top-4 -left-4 w-16 h-16 rounded-full opacity-60 animate-[spin_6s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
+          <span className="absolute top-[60%] -left-8 w-20 h-20 rounded-full opacity-40 animate-[spin_5s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
+          <span className="absolute top-[10%] left-[60%] w-24 h-24 rounded-full opacity-50 animate-[spin_8s_linear_infinite] bg-linear-to-b from-transparent to-(--card-color) blur-xl"></span>
 
-                {/* Fixed Class: border-(--card-color)/30 and shadow variants */}
-                <div className="relative z-10 w-72 h-96 bg-white/70 backdrop-blur-md border border-(--card-color)/30 rounded-[10px] p-8 flex flex-col justify-between transition-all duration-500 group-hover:scale-105 group-hover:shadow-(--card-color)/20 group-hover:border-(--card-color) overflow-hidden">
-                  
-                  {/* Fixed Class: bg-(--card-color) */}
-                  <div className="absolute inset-0 bg-(--card-color) translate-x-full translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 ease-out -z-10 opacity-10"></div>
-                  
-                  <div className="absolute -top-3 -right-3 bg-white rounded-full p-1 shadow-md border border-gray-100">
-                    <svg className="w-8 h-8" fill={card.color} viewBox="0 0 512 512">
-                      <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
-                    </svg>
-                  </div>
+          {/* Card Container */}
+          <div className="relative z-10 w-72 h-64 bg-white/70 backdrop-blur-md border border-(--card-color)/30 rounded-[10px] p-8 flex flex-col justify-between transition-all duration-500 group-hover:scale-105 group-hover:shadow-(--card-color)/20 group-hover:border-(--card-color) overflow-hidden">
+            
+            <div className="absolute inset-0 bg-(--card-color) translate-x-full translate-y-full group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 ease-out -z-10 opacity-10"></div>
+            
+            <div className="absolute -top-3 -right-3 bg-white rounded-full p-1 shadow-md border border-gray-100">
+              <svg className="w-8 h-8" fill={card.color} viewBox="0 0 512 512">
+                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path>
+              </svg>
+            </div>
 
-                  <div className="space-y-4 text-left">
-                    {/* Fixed Class: text-(--card-color) */}
-                    <strong className="block text-sm font-black text-(--card-color) tracking-widest transition-colors duration-300 group-hover:text-gray-900">
-                      {card.title}
-                    </strong>
-                    <p className="text-[14px] leading-relaxed text-gray-600 font-medium group-hover:text-gray-800 transition-colors">
-                      {card.desc}
-                    </p>
-                    {/* Fixed Class: border-(--card-color)/20 */}
-                    <hr className="border-t-[1.5px] border-(--card-color)/20 group-hover:border-(--card-color)/40" />
-                    <p className="text-2xl font-black text-gray-800 tracking-tight">{card.subText}</p>
-                  </div>
+            <div className="space-y-4 text-left">
+              <strong className="block text-2xl font-black text-(--card-color) tracking-widest transition-colors duration-300 group-hover:text-gray-900">
+                {card.title}
+              </strong>
+              <p className="text-[14px] leading-relaxed text-gray-600 font-medium group-hover:text-gray-800 transition-colors">
+                {card.desc}
+              </p>
+              <hr className="border-t-[1.5px] border-(--card-color)/20 group-hover:border-(--card-color)/40" />
+              <p className="text-2xl font-black text-gray-800 tracking-tight">{card.subText}</p>
+            </div>
 
-                  {/* Fixed Class: border-(--card-color) and text-(--card-color) and hover:bg-(--card-color) */}
-                  <button className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-full border-2 border-(--card-color) text-(--card-color) font-bold text-xs transition-all duration-300 hover:bg-(--card-color) hover:text-white bg-white">
-                    Enquire Now
-                  </button>
-                </div>
-              </div>
-            ))}
+            {/* Replaced Button with simple status text */}
+            <div className="text-left py-2">
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
 
+    {/* Single Centralized Button */}
+    <div className="mt-8">
+      <button
+        onClick={() => navigate('/quote')}
+        className="inline-flex items-center justify-center gap-3 px-12 py-5 rounded-full bg-[#4d72c7] text-white font-bold text-lg shadow-2xl shadow-[#4d72c7]/30 hover:bg-[#4d72f5] hover:scale-105 transition-all duration-300 active:scale-95">
+        Get Your Free Quote Today
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+        </svg>
+      </button>
+      <p className="mt-4 text-gray-500 text-sm font-medium">Join 5000+ satisfied families across India</p>
+    </div>
+  </div>
+</section>
       {/* 5. All India Network */}
       <section className="bg-[#000000] py-16 px-6 text-white text-center">
         <div className="max-w-4xl mx-auto space-y-8">

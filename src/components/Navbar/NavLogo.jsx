@@ -1,14 +1,25 @@
-import React from 'react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const NavLogo = ({ isScrolled }) => (
-  <div className="shrink-0 flex items-center cursor-pointer select-none">
-    <span className={`text-2xl font-bold tracking-tight transition-colors duration-300 ${
-      isScrolled ? 'text-gray-900' : 'text-black'
-    }`}>
-      Vedha <span className="text-[#fdfdfd]">Packers &</span> 
-      <span className={isScrolled ? 'text-gray-900' : 'text-black'}> Movers</span>
-    </span>
-  </div>
-);
+const NavLogo = () => {
+  const navigate = useNavigate();
 
-export default NavLogo;
+  return (
+    <div
+      onClick={() => navigate("/")}
+      className="cursor-pointer flex items-center"
+    >
+      <div className="bg-linear-to-r from-green-500 to-emerald-600 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg flex items-center gap-2 hover:scale-105 transition-all duration-300">
+        
+        <span className="font-bold tracking-wide">
+          Vedha Packers & Movers
+        </span>
+
+        <span className="w-2 h-2 bg-white rounded-full"></span>
+
+      </div>
+    </div>
+  );
+};
+
+export default NavLogo; 

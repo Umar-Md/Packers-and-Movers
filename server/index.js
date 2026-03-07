@@ -77,8 +77,16 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/send-email', async (req, res) => {
-  const { name, phone, email, moveFrom, moveTo, message } = req.body;
-  const leadNo = Math.floor(Math.random() * 9000) + 1000;
+const name = req.body.name || req.body.user_name;
+const phone = req.body.phone || req.body.user_phone;
+const email = req.body.email || req.body.user_email;
+
+const moveFrom = req.body.moveFrom || req.body.from_loc;
+const moveTo = req.body.moveTo || req.body.to_loc;
+
+const message =
+  req.body.message ||
+  `Move Date: ${req.body.move_date || "Not specified"}`;  const leadNo = Math.floor(Math.random() * 9000) + 1000;
 
   // Format for WhatsApp (PlainText)
   const whatsappBody = `

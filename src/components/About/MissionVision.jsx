@@ -21,7 +21,7 @@ const MissionVision = () => (
           </h4>
         </div>
 
-        <p className="text-black font-montserrat italic text-[20px]">
+        <p className="text-white font-montserrat italic text-[20px]">
           “To become the most trusted and tech-enabled packers and movers in Andhra Pradesh by 2030.”
         </p>
       </div>

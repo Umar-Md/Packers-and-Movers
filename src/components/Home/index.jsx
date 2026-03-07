@@ -3,7 +3,6 @@ import Carousel from './Carousel';
 import InfoCards from './InfoCards';
 import Process from './Process';
 import Services from './Services';
-import QuoteForm from './QuoteForm';
 import Pricing from './Pricing';
 import Hero from './Hero';
 import About from './About';
@@ -15,7 +14,6 @@ const HomeContent = () => {
       <section id="home">
         <Hero />
         <Carousel />
-        {/* <QuoteForm  /> */}
         <Pricing />
         <About />
       </section>

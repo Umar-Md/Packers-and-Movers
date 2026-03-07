@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const ServiceCard = ({ title, image, desc }) => (
-  <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,0,142,0.2)] group flex flex-col">
+const ServiceCard = ({ title, image, desc }) => {
+  const navigate = useNavigate();
+  return (
+    <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(176,0,142,0.2)] group flex flex-col">
     
     {/* Image Container */}
     <div className="h-56 overflow-hidden relative">
@@ -25,12 +28,15 @@ const ServiceCard = ({ title, image, desc }) => (
         {desc}
       </p>
 
-      <button className="w-full py-3 border-2 border-[#b0008e] text-[#b0008e] rounded-xl font-bold text-sm hover:bg-[#b0008e] hover:text-white transition-all">
+      <button
+        onClick={() => navigate('/services')}
+        className="w-full py-3 border-2 border-[#b0008e] text-[#b0008e] rounded-xl font-bold text-sm hover:bg-yellow-400 hover:text-white transition-all">
         View Details
       </button>
     </div>
 
   </div>
 );
+};
 
 export default ServiceCard;

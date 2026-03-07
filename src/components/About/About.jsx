@@ -10,12 +10,12 @@ const About = () => {
   return (
     <main className="overflow-x-hidden">
       
-      <div className="bg-[#34405c] py-18 px-6 text-center"> 
+      <div className="bg-[#4d72c7] py-18 px-6 text-center"> 
         {/* increased py-18 to give the Navbar space to breathe */}
-        <h1 className="text-6xl md:text-7xl font-black text-white tracking-tighter" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
+        <h1 className="text-4xl md:text-7xl font-black text-white" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
           About <span className="text-[#ff3cd8]">Us</span>
         </h1>
-        <p className="text-black mt-0 font-montserrat text-lg">
+        <p className="text-white mt-0 font-montserrat text-lg">
           Reliability • Security • Speed
         </p>
       </div>
@@ -25,7 +25,7 @@ const About = () => {
       <Strengths />
       
       {/* CTA Section */}
-      <div className="bg-[#b0008e] py-16 px-6 text-center">
+      <div className="bg-[#b0008e] py-18 px-6 text-center">
         <h2 className="text-3xl font-black text-white mb-2">Ready to experience a better move?</h2>
         <button
         onClick={() => navigate('/quote')}

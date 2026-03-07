@@ -62,7 +62,7 @@ const InfoCards = () => {
                     </svg>
                   </div>
 
-                  <strong className="block text-sm font-black text-var(--card-color) group-hover:text-white tracking-widest transition-colors duration-300">
+                  <strong className="block text-2xl font-black text-var(--card-color) group-hover:text-white tracking-widest transition-colors duration-300">
                     {card.title}
                   </strong>
 

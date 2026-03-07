@@ -51,8 +51,7 @@ const Carousel = () => {
 
       {/* Main Content Layer */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full pt-20">
-          
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full pt-20">          
           {/* LEFT SIDE: Copy & CTAs */}
           <div className="space-y-8 animate-in fade-in slide-in-from-left duration-1000">
             <div>
@@ -96,7 +95,7 @@ const Carousel = () => {
           </div>
 
           {/* RIGHT SIDE: Quote Form Integration */}
-          <div className="hidden lg:block lg:pl-10">
+          <div className="w-full lg:pl-10">
              <QuoteForm />
           </div>
 
