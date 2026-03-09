@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <main className="overflow-x-hidden">
       {/* Page Header (Matches About Us style) */}
-      <div className="bg-[#4d72c7] pt-20 pb-10 px-6 text-center">
+      <div className="bg-[#4d72c7] pt-22 pb-10 px-6 text-center">
         <h1 className="text-4xl md:text-7xl font-black text-white" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
           Our <span className="text-[#ffffff]">Services</span>
         </h1>

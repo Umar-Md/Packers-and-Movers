@@ -56,22 +56,14 @@ const ServiceSection = ({ service }) => {
           <div className="pt-6">
             <button
               onClick={() => navigate("/quote")}
-              className="group relative px-10 py-4 bg-[#212121] text-white font-black text-lg rounded-[15px] transition-transform active:scale-95 overflow-hidden shadow-xl"
+              className="group relative px-10 py-4 bg-[#4d72c7] text-white font-black text-lg rounded-[15px] transition-transform active:scale-95 overflow-hidden shadow-xl"
             >
               {/* The Circling Border Layer */}
               <span
-                className="absolute inset-0 p-0.5 rounded-[15px] 
-      before:absolute before:inset-[-200%] before:bg-[conic-gradient(#488cfb,#29dbbc,#ddf505,#ff9f0e,#e440bb,#655adc,#488cfb)]
-      before:group-hover:animate-[spin_4s_linear_infinite]
-      
-      mask-image:linear-gradient(#fff,#fff),linear-gradient(#fff,#fff)
-      [mask-clip:content-box,padding-box]
-      [-webkit-mask-composite:destination-out]
-      mask-composite:exclude
-      pointer-events-none"
+                className="absolute inset-0 p-0.5 rounded-[15px]"
               ></span>
 
-              <span className="relative z-10">👉 Get Quote</span>
+              <span className="relative z-10">Get Quote</span>
             </button>
           </div>
         </div>

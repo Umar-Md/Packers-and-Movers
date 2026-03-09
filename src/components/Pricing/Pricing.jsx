@@ -15,7 +15,7 @@ const Pricing = () => {
   return (
     <main className="min-h-screen bg-white">
       {/* 1. Added the Dark Header to match Services/About */}
-      <div className="bg-[#4d72c7] py-18 pb-10 px-6 text-center">
+      <div className="bg-[#4d72c7] py-20 pb-10 px-6 text-center">
         <h1 className="text-4xl md:text-7xl font-black text-white style={{ fontFamily: 'Century Gothic, sans-serif' }}">
           Pricing <span className="text-[#ffffff]">Plans</span>
         </h1>

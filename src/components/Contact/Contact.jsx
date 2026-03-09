@@ -6,11 +6,11 @@ import ContactInfo from './ContactInfo';
 const Contact = () => {
   return (
     <main className="bg-white min-h-screen">
-      <div className="bg-[#4d72c7] py-18 pb-4 px-6 text-center">
+      <div className="bg-[#4d72c7] py-32 pb-4 px-6 text-center">
         <h1 className="text-4xl md:text-7xl font-black text-white style={{ fontFamily: 'Century Gothic, sans-serif' }}">
           Contact <span className="text-[#ffffff]">Us</span>
         </h1>
-        <p className="text-white mt-0 font-montserrat text-lg">
+        <p className="text-black mt-0 font-montserrat text-[20px] font-bold">
 "Let’s start a conversation. Our team is here to help."        </p>
       </div>
 

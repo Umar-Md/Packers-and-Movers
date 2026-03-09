@@ -147,8 +147,8 @@ const About = () => {
       <section className="bg-[#000000] py-16 px-6 text-white text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-4xl font-bold">All India Network</h2>
-          <div className="w-30 h-1 bg-[#b0008e] mx-auto rounded-full"></div>
-          <p className="text-gray-400 text-[20px] leading-relaxed font-medium">
+          <div className="w-34 h-1 bg-orange-400 mx-auto rounded-full"></div>
+          <p className="text-white text-[20px] leading-relaxed font-medium">
             From our primary hub in Guntur, we provide seamless 
             intercity and interstate shifting services to any destination across India.
           </p>

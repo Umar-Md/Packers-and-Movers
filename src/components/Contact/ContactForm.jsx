@@ -270,7 +270,7 @@ const ContactForm = () => {
               onChange={handleChange}
               type="text"
               placeholder="Ex: Rajesh Kumar"
-              className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
+              className="w-full p-4 placeholder:text-gray-300 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
             />
           </div>
           <div className="space-y-1">
@@ -284,7 +284,7 @@ const ContactForm = () => {
               onChange={handleChange}
               type="tel"
               placeholder="Ex: 9989441906"
-              className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
+              className="w-full p-4 placeholder:text-gray-300 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
             />
           </div>
         </div>
@@ -301,7 +301,7 @@ const ContactForm = () => {
             onChange={handleChange}
             type="email"
             placeholder="Ex: abc@example.com"
-            className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
+            className="w-full p-4 placeholder:text-gray-300 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
           />
         </div>
 
@@ -318,7 +318,7 @@ const ContactForm = () => {
               onChange={handleChange}
               type="text"
               placeholder="City Name"
-              className="w-full p-4 bg-gray-50  rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
+              className="w-full p-4 placeholder:text-gray-300 bg-gray-50  rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
             />
           </div>
           <div className="space-y-1">
@@ -332,7 +332,7 @@ const ContactForm = () => {
               onChange={handleChange}
               type="text"
               placeholder="City Name"
-              className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
+              className="w-full p-4 placeholder:text-gray-300 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
             />
           </div>
         </div>
@@ -349,7 +349,7 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder="Tell us about your items (Fridge, Sofa, etc.)"
             rows="3"
-            className="w-full p-4 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
+            className="w-full p-4 placeholder:text-gray-300 bg-gray-50 rounded-2xl border-2 border-transparent focus:border-[#b0008e] focus:bg-white outline-none font-bold transition-all shadow-sm"
           ></textarea>
         </div>
 

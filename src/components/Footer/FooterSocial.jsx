@@ -1,22 +1,12 @@
-import React from 'react';
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import React from "react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const FooterSocial = () => {
   const socialIcons = [
-    { 
-      name: 'Facebook', 
-      icon: <Facebook size={18} />, 
-      href: 'https://facebook.com/yourpage' 
-    },
-    { 
-      name: 'Instagram', 
-      icon: <Instagram size={18} />, 
-      href: 'https://instagram.com/yourhandle' 
-    },
-    { 
-      name: 'LinkedIn', 
-      icon: <Linkedin size={18} />, 
-      href: 'https://linkedin.com/company/yourcompany' 
+    {
+      name: "Instagram",
+      icon: <Instagram size={18} />,
+      href: "https://www.instagram.com/anikumar9458?igsh=MWtxazdmbGQ1emNnMw%3D%3D",
     },
   ];
 
@@ -35,8 +25,7 @@ const FooterSocial = () => {
             {social.icon}
           </span>
         </a>
-      )
-      )}
+      ))}
     </div>
   );
 };
